@@ -23,8 +23,7 @@ body{
   top: 0px;
 }
 
-a.skip{
-  background: white;
+body a.skip{
   left: 0;
   padding: 6px;
   position: absolute;
@@ -34,10 +33,12 @@ a.skip{
   z-index: 1;
 }
 
-a.skip:focus{
-  top:20px;
-  color: black;
-  text-decoration-style: solid;
+body a.skip:focus{
+    top: 20px;
+    color: white;
+    background-color: black;
+    z-index: 199;
+    text-decoration-style: solid;
 }
 
 .logo-title {
@@ -274,7 +275,7 @@ img {
   margin: 0px 10px;
   padding: 0px;
   text-align: center;
-  color: #085ba5;
+  color: #000;
   font-family: 'Pangolin', cursive;;
   font-size: 21px;
 }
@@ -348,6 +349,7 @@ img {
 }
 
 .first-image{
+  background-image: url(images/app/uno.png);
   grid-column: 1 / -1;
   max-height: 700px;
   grid-row: 2 / span 1;
@@ -491,9 +493,7 @@ img {
   border-radius: 30px;
   border: 5px solid black;
   display: flex;
-  -webkit-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
   align-items: center;
   flex-wrap: wrap;
   }
@@ -507,7 +507,7 @@ img {
   .podcast {
     width: 50vw;
     align-items: center;
-    background-color: rgba(247, 205,179,0.5);
+    background-color: rgba(247, 205,179,0.2);
     /* #f7ccb5; */
     border: 1px solid #626262;
     margin: 3px;
@@ -521,7 +521,6 @@ img {
     /* left: 0vh; */
     display: flex;
     align-items: flex-end;
-    /* border: 1px solid #626262; */
     margin: 3px;
   }
 
